@@ -37,6 +37,10 @@ cd ${RUNDIR}
 run pwd
 
 
+run yum -y update
+run yum -y install which 
+
+
 # ---------------------------------
 # INSTALL WGET
 # ---------------------------------
@@ -57,7 +61,7 @@ echo "INSTALL WGET DONE ---"
 read -p "Press Enter to Continue ..."
 
 # ---------------------------------
-# INSTALL PYTHON
+# INSTALL PYTHON AND PIP
 # ---------------------------------
 # Install Python 2.7.14 (do NOT remove 2.6, by the way)
 cd ${RUNDIR}
@@ -70,7 +74,10 @@ run ./configure --prefix=/usr/local
 run make && make altinstall
 run ln -s /usr/local/bin/python2.7 /usr/local/bin/python
 
-echo "INSTALL PYTHON DONE ---"
+run curl "https://bootstrap.pypa.io/get-pip.py" -o "${RUNDIR}get-pip.py"
+run python ${RUNDIR}get-pip.py
+
+echo "INSTALL PYTHON AND PIP DONE ---"
 read -p "Press Enter to Continue ..."
 
 

@@ -58,7 +58,7 @@ run yum -y install sqlite sqlite-devel  # you will be sad if you don't install t
 echo 'alias shasum="sha1sum"' >> $HOME/.bashrc
 
 echo "INSTALL WGET DONE ---"
-read -p "Press Enter to Continue ..."
+#read -p "Press Enter to Continue ..."
 
 # ---------------------------------
 # INSTALL PYTHON AND PIP
@@ -78,7 +78,7 @@ run curl "https://bootstrap.pypa.io/get-pip.py" -o "${RUNDIR}get-pip.py"
 run python ${RUNDIR}get-pip.py
 
 echo "INSTALL PYTHON AND PIP DONE ---"
-read -p "Press Enter to Continue ..."
+#read -p "Press Enter to Continue ..."
 
 
 # Install virtualenv and virtualenvwrapper
@@ -96,7 +96,7 @@ run pwd
 run python2.7 setup.py install
 
 echo "INSTALL SETUPTOOLS DONE ---"
-read -p "Press Enter to Continue ..."
+#read -p "Press Enter to Continue ..."
 
 
 # ---------------------------------
@@ -111,7 +111,7 @@ run pwd
 run python2.7 setup.py install
 
 echo "INSTALL VIRTUALENV DONE ---"
-read -p "Press Enter to Continue ..."
+#read -p "Press Enter to Continue ..."
 
 
 # ---------------------------------
@@ -126,7 +126,7 @@ run pwd
 run python2.7 setup.py install
 
 echo "INSTALL VIRTUALENV-WRAPPER DONE ---"
-read -p "Press Enter to Continue ..."
+#read -p "Press Enter to Continue ..."
 
 
 echo '. '${RUNDIR}'virtualenvwrapper-4.0/virtualenvwrapper.sh' >> $HOME/.bashrc

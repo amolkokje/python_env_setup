@@ -59,12 +59,12 @@ read -p "Press Enter to Continue ..."
 # ---------------------------------
 # INSTALL PYTHON
 # ---------------------------------
-# Install Python 2.7.4 (do NOT remove 2.6, by the way)
+# Install Python 2.7.14 (do NOT remove 2.6, by the way)
 cd ${RUNDIR}
 run pwd
-run wget --no-check-certificate http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.bz2
-run tar xf Python-2.7.4.tar.bz2
-cd ${RUNDIR}Python-2.7.4/
+run wget --no-check-certificate https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
+run tar xf Python-2.7.14.tgz
+cd ${RUNDIR}Python-2.7.14/
 run pwd
 run ./configure --prefix=/usr/local
 run make && make altinstall

@@ -90,9 +90,9 @@ fi
 cd ${RUNDIR}
 run pwd
 
-install_yum_which_wget
-install_devtools
-install_python ${RUNDIR}
-install_pip ${RUNDIR}
+run install_yum_which_wget
+run install_devtools
+run install_python ${RUNDIR}
+run install_pip ${RUNDIR}
 
 echo "ENVIRONMENT SETUP DONE!"

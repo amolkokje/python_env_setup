@@ -90,7 +90,7 @@ fi
 cd ${RUNDIR}
 run pwd
 
-install_wget
+install_yum_which_wget
 install_devtools
 install_python ${RUNDIR}
 install_pip ${RUNDIR}
